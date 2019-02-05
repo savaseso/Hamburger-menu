@@ -58,26 +58,24 @@
     height: 2px;
     background: inherit;
 }
-/*moves line  down*/
-.menu-wrap .hamburger > div:after {
-    top: 10px;
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
 }
 
-/*toggler animation*/
-
+/* Toggler Animation */
 .menu-wrap .toggler:checked + .hamburger > div {
   transform: rotate(135deg);
 }
-/*Turns line into X*/
+
+/* Turns Lines Into X */
 .menu-wrap .toggler:checked + .hamburger > div:before,
-.menu-wrap .toggler:checked + .hamburger > div:after{
-  top:0;
-  transform: rotata(90deg);
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
 }
 
-
-/*rotate on hover when checked*/
-
+/* Rotate On Hover When Checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
 }
